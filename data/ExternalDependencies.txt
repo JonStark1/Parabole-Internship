@@ -1,0 +1,6 @@
+=================================================== WRITE THE DEPENDENCIES BELOW ===============================================================
+
+1) Word + Context Vecotors(Common Crawl) available at https://github.com/alexandres/lexvec#pre-trained-vectors
+2) Numpy
+3) NLTK(Natural Language Processing Library for Python 3.6)
+4) gensim

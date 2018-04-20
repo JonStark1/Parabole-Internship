@@ -1,0 +1,9 @@
+===================================== FILL YOUR EXPLANATION BELOW ===============================================================================
+
+The simple idea was to use similarity between two words and if the similarity was grater than a threshold value, the words
+were clustered into the same class. To find similarity, I used pre-trained word2vec vectors available at 
+https://github.com/alexandres/lexvec#pre-trained-vectors. These vectors create a vector for every word. If the words are
+similar, the dot product corresponding to these vectors will be greater. 
+
+I ran a loop to find the similarities between two words and the two words with similarity greater than 70(specific to the 
+vectors used) were assigned to the same class. The clusters were written in the text files in different lines.
