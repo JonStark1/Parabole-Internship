@@ -21,8 +21,9 @@ def creating_subclusters(list_of_terms, name_of_file):
     
 # Your code that converts the cluster into subclusters and saves the output in the output folder with the same name as input file
 # Note the writing to file has to be handled by you.
-	
-    file_object  = open(name_of_file+'.txt')
+    mypath = "input"
+    name =  os.path.join(mypath,name_of_file)
+    file_object = open(name)
     count_word = 0
     class_name = []
     words = []
@@ -31,9 +32,9 @@ def creating_subclusters(list_of_terms, name_of_file):
             count_word = count_word + 1
             class_name.append(0)
             words.append(word)            
-            print(word)
+            #print(word)
     p = 0
-    print(words)
+    #print(words)
     class_count = 0
     for i in range(0,count_word):
         for j in range(i+1,count_word):
@@ -68,8 +69,9 @@ def creating_subclusters(list_of_terms, name_of_file):
         #print(i)
         for j in range(0,count_word):            
             if class_name[j] == i:
-                #print(words[j])
+                print(words[j])
                 e.write(words[j]+' ')
+        print('\n')
         e.write('\n')
     e.close()
     file_object.close()
