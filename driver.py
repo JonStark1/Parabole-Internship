@@ -69,9 +69,9 @@ def creating_subclusters(list_of_terms, name_of_file):
         #print(i)
         for j in range(0,count_word):            
             if class_name[j] == i:
-                print(words[j])
+                #print(words[j])
                 e.write(words[j]+' ')
-        print('\n')
+        #print('\n')
         e.write('\n')
     e.close()
     file_object.close()
